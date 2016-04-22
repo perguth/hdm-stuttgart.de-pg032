@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+  <head>
+    <script type="text/javascript">
+      /**
+       * It seems the HdM is not providing RewriteCond-
+       * support. So...
+       */
+      if (window.location.protocol == "http:") {
+          var address = window.location.href.substr(5);
+          window.location = "https:" + address;
+      }
+    </script>
+    <meta charset="utf-8">
+    <title>Hi!</title>
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <style>
+      html {
+        color: #29292B;
+        margin-top: 25pt;
+      }
+      article {
+        width: 90%;
+        max-width: 400pt;
+        margin: 0 auto;
+      }
+      h1 {
+        font-family: 'Indie Flower', cursive; 
+        font-size: 24pt; 
+        letter-spacing: 0.1em;
+      }
+      a {
+        color: #064780;
+        text-decoration: none;
+        border-bottom: 1px dotted #A0C2DE;
+      }
+      a:hover {
+        border-bottom: 1px solid #A0C2DE;
+      }
+      .ich-mag a {
+        padding-left: 20px;
+      }
+      .ich-mag .raspi {
+        background: transparent url('vendor/raspi.png')  center left no-repeat;
+      }
+      .ich-mag .oss {
+        background: transparent url('vendor/oss.png')  center left no-repeat;
+      }
+      .ich-mag .osh {
+        background: transparent url('vendor/osh.png')  center left no-repeat;
+      }
+      .ich-mag .eff {
+        background: transparent url('vendor/eff.png')  center left no-repeat;
+      }
+      .ich-mag .gnu {
+        background: transparent url('vendor/gnu.png')  center left no-repeat;
+      }
+      .ich-mag .linux {
+        background: transparent url('vendor/linux.png')  center left no-repeat;
+      }
+      p {
+        font-size: 16pt; 
+        font-family: 'Palatino Linotype', serif; 
+        letter-spacing: 0.03em;
+        text-align: justify; 
+        line-height: 1.3em;
+      }
+      .ich-mag p,
+      .kontakt p {
+        text-align: left;
+      }
+      .kontakt p {
+        font-size: 13pt;
+        line-height: 1.4em;
+      }
+      .ich-mag p *,
+      .kontakt p * {
+        opacity: 0.5;
+      }
+      .ich-mag a:hover,
+      .kontakt a:hover {
+        opacity: 0.7;
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <section>
+        <h1>Hi, mein Name ist Per<i>!</i></h1>
+        <p>Ich studiere Mobile Medien hier an der HdM. Wenn ich am bastlen und ausprobieren bin, blogge ich meistens auf <a href="https://echt.guth.so/">echt.guth.so</a> darüber. Ich glaube an den freien Austausch und den freundlichen Wettstreit der Ideen.
+        </p>
+      </section>
+      <section class="ich-mag">
+        <p>
+          Ich mag <a class="raspi" href="http://www.raspberrypi.org/">RaspberryPi</a>, <a class="oss" href="https://github.com/">Opensource-Software</a>, <a class="osh" href="http://opensourceecology.org/">Opensource-Hardware</a>, <a class="gnu" href="https://www.youtube.com/watch?v=5utOKXUDCB0">GNU</a>, <a class="linux" href="http://www.ubuntu.com/desktop">Linux</a> und <a class="eff" href="https://youtu.be/YoFLTQEWksg?t=50s">EFF</a>.
+         </p>
+      </section>
+      <section class="kontakt">
+        <p>
+          Kontaktierbar bin ich über <a href="https://whispersystems.org/#encrypted_texts">TextSecure</a> unter +49 711 217 244 42.
+        </p>
+      </section>
+    </article>
+
+    
+    <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="bower_compontents/normalize.css/normalize.css">
+    <!-- Piwik -->
+    <script type="text/javascript">
+      var _paq = _paq || [];
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://analytics.guth.so/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', 24]);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+        g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <noscript><p><img src="http://analytics.guth.so/piwik.php?idsite=24" style="border:0;" alt="" /></p></noscript>
+    <!-- End Piwik Code -->
+  </body>
+</html>
